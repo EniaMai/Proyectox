@@ -18,14 +18,14 @@ body {
 
 nav {
     background-image: none;
-    background-color: var(--primary-color);
-    font-size: 1vw;
-    font-family: "Varela Round", sans-serif; 
-    text-align: center;
+    background-color: rgba(44, 120, 101, 1);
+    font-size: 1.3vw;
+    text-align: left;
     color: #2C7865;
     padding-top: 5px;
     padding-bottom: 8px;
-    margin-bottom: 35px;
+    padding-left: 18px;
+    margin-bottom: 35px; 
 }
 
 section {
@@ -43,7 +43,7 @@ section {
 h2 { 
     padding: 0 0 12px 0;
     font-size: 40px;
-    color: #FF9800;
+    color: var(--primary-color);
     text-shadow: 2px 2px  #2C7865;
 }
 
@@ -77,8 +77,31 @@ input:not(.boton, .check), select {
     padding: 5px 20px;
     margin-top: 10px;
 }
+
 .check {
     cursor: pointer;
 }
 
+.Inicio {
+    color: var(--bg-color);
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: "Varela Round", sans-serif;
+    font-size: 1.3vw;
+    align-items: center;
+    justify-content: center;
+}
 
+.logo { 
+    padding: 0 px 10px;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+:hover.Inicio {
+    color: #FF9800;
+    font-size: 2vw;
+}
