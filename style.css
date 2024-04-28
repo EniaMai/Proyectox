@@ -13,10 +13,10 @@
 }
 
 body{
-  background-color:#e6ebe0;
-  color: black;
+  background-color:#2C7865;
+  color: white;
 }
-
+/* DYSPLAY DE ESCRITORIO */
 .header {
   background-color: rgba(44, 120, 101, 1);
   color: whitesmoke;
@@ -68,6 +68,7 @@ body{
    transform: scale(0.95);
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
    border-radius: 3px;
+   transition: ease 0.5s;
   }
   .linkNavInicioSesion{
    font-weight: 300;
@@ -82,23 +83,27 @@ body{
    background-color: #FF9800;
    color: #ffffff;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   transition: ease 0.5s;
   }
       
   /* DISPLAY CELULAR Y TABLET */
   @media (max-width: 768px) {
     .header{
       height: initial;
+      position: sticky;
     }
     .navegacion{
-      margin-left:10px;
-      margin-right: 10px;
+      margin-left:0px;
+      margin-right: 23px;
       flex-direction: column;
       row-gap: 20px;
-  }
+     }
+     
          
     .logo{
        font-size: 1.2rem;
        font-weight:700;
+       margin-right: 44px;
      }
 
     .listaNav{
@@ -108,18 +113,62 @@ body{
       font-weight: 400;
       margin-right: initial;
       font-size: 1rem;
-     padding: 0.2rem;   
+     padding: 0.3rem;   
           } 
   }
-  /*fin display media*/
       
-  /*MAIN*/
+  /*MAIN ESCRITORIO*/
     .sectionPrincipal{
       color: whitesmoke;
       background:linear-gradient(to right top, #0000008a, #0000008a), url(img/background2.jpg);
       background-size: cover;
       background-position: center;
       height: 90vh;
-      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
+    .tituloPrincipal{
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 4px black;
+      transition: ease 0.8s;
+      
+    }
+    .tituloPrincipal:hover{
+      color: transparent;
+      -webkit-text-stroke: 0.1px whitesmoke;
+      transition: ease-out 0.8s;
+      
+    }
+    .subtituloPrincipal{
+      font-size: 1.7rem;
+      font-weight: 100;
+      margin-bottom: 1rem;
+      transition: ease 0.8s;
+    }
+    
+    .botonRegistrarse{
+      background-color: #D9EDBF;
+      color: #2C7865;
+      padding: 0.9rem 1.3rem;
+      border-radius: 30px;
+      border: 1px solid #D9EDBF;
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: ease 0.8s;
+      
+    }
+    .botonRegistrarse:hover{
+      background-color: transparent;
+      border:1px solid #FF9800;
+      color: #FF9800;
+      transition: ease-in-out 0.4s;
+      box-shadow: 0 0 10px rgba(227, 137, 18, 0.3);
+    }
+    
   
