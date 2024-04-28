@@ -47,61 +47,68 @@ body{
  
 }
 
-  .listaNav{
+.listaNav{
     list-style: none;
     display: flex;
     align-items: center;
-  }
-  .listaItem{
-      margin-right: 22px;
-  }
-  .linkNav{
-    text-decoration: none;
-    color: #D9EDBF;
-    font-weight: 300;
-    font-size: 1.1rem;
-    padding: 0.4rem 0.4rem;
-  }
-  .linkNav:hover{
-   background-color: #D9EDBF;
-   color:#2C7865;
-   transform: scale(0.95);
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-   border-radius: 3px;
-   transition: ease 0.5s;
-  }
-  .linkNavInicioSesion{
-   font-weight: 300;
-   text-decoration: none;
-   padding: 0.4rem 0.4rem;
-   background-color: #D9EDBF ;
-   color: #2C7865;
-   border-radius: 3px;
-  }
+}
+
+.listaItem{
+  margin-right: 22px;
+}
+
+.linkNav{
+  text-decoration: none;
+  color: #D9EDBF;
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding: 0.4rem 0.4rem;
+}
+
+.linkNav:hover{
+  background-color: #D9EDBF;
+  color:#2C7865;
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  transition: ease 0.5s;
+}
+
+.linkNavInicioSesion{
+  font-weight: 300;
+  text-decoration: none;
+  padding: 0.4rem 0.4rem;
+  background-color: #D9EDBF ;
+  color: #2C7865;
+  border-radius: 3px;
+}
   
-  .linkNavInicioSesion:hover{
-   background-color: #FF9800;
-   color: #ffffff;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-   transition: ease 0.5s;
-  }
+.linkNavInicioSesion:hover{
+  background-color: #FF9800;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: ease 0.5s;
+}
       
   /* DISPLAY CELULAR Y TABLET */
-  @media (max-width: 768px) {
+ @media (max-width: 768px) {
+  .body{
+    
+    font-size: 20px !important;
+  }
     .header{
       height: initial;
-      position: sticky;
+      
     }
     .navegacion{
-      margin-left:0px;
-      margin-right: 23px;
+      margin-left:30px;
+      margin-right: 0px;
       flex-direction: column;
-      row-gap: 20px;
+      row-gap: 1px;
      }
-     
-         
+       
     .logo{
-       font-size: 1.2rem;
+       font-size: 1.3rem;
        font-weight:700;
        margin-right: 44px;
      }
@@ -114,8 +121,18 @@ body{
       margin-right: initial;
       font-size: 1rem;
      padding: 0.3rem;   
-          } 
-  }
+    } 
+    .linkNavInicioSesion{
+      display: flex;
+      padding: 0.3rem 0.3rem;
+
+    }
+
+    .tituloPrincipal{
+      /* font-size: 25px !important; */
+      font-weight: 100;
+    }
+}
       
   /*MAIN ESCRITORIO*/
     .sectionPrincipal{
@@ -170,5 +187,8 @@ body{
       transition: ease-in-out 0.4s;
       box-shadow: 0 0 10px rgba(227, 137, 18, 0.3);
     }
-    
+  .buscadorPrincipal{
+    background-color: ;
+
+  }
   
