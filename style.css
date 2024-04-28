@@ -1,0 +1,125 @@
+.varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+  
+}
+
+body{
+  background-color:#e6ebe0;
+  color: black;
+}
+
+.header {
+  background-color: rgba(44, 120, 101, 1);
+  color: whitesmoke;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navegacion {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-right: 20px;
+  padding: 0.7rem 20px;
+  
+}
+
+.logo {
+  text-decoration: none;
+  color: #d9edbf;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.avionLogo {
+  width: 33px;
+ 
+}
+
+  .listaNav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  .listaItem{
+      margin-right: 22px;
+  }
+  .linkNav{
+    text-decoration: none;
+    color: #D9EDBF;
+    font-weight: 300;
+    font-size: 1.1rem;
+    padding: 0.4rem 0.4rem;
+  }
+  .linkNav:hover{
+   background-color: #D9EDBF;
+   color:#2C7865;
+   transform: scale(0.95);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   border-radius: 3px;
+  }
+  .linkNavInicioSesion{
+   font-weight: 300;
+   text-decoration: none;
+   padding: 0.4rem 0.4rem;
+   background-color: #D9EDBF ;
+   color: #2C7865;
+   border-radius: 3px;
+  }
+  
+  .linkNavInicioSesion:hover{
+   background-color: #FF9800;
+   color: #ffffff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+      
+  /* DISPLAY CELULAR Y TABLET */
+  @media (max-width: 768px) {
+    .header{
+      height: initial;
+    }
+    .navegacion{
+      margin-left:10px;
+      margin-right: 10px;
+      flex-direction: column;
+      row-gap: 20px;
+  }
+         
+    .logo{
+       font-size: 1.2rem;
+       font-weight:700;
+     }
+
+    .listaNav{
+      padding:initial;
+    }
+     .listaItem .linkNav{
+      font-weight: 400;
+      margin-right: initial;
+      font-size: 1rem;
+     padding: 0.2rem;   
+          } 
+  }
+  /*fin display media*/
+      
+  /*MAIN*/
+    .sectionPrincipal{
+      color: whitesmoke;
+      background:linear-gradient(to right top, #0000008a, #0000008a), url(img/background2.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      text-decoration: none;
+    }
+  
