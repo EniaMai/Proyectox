@@ -3,10 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto X</title>
+  <link rel="stylesheet" href="style.css">
+  <title>CAC-TRIP</title>
 </head>
 <body>
-  <h1>Hola esto es una prueba</h1>
-  
+  <header class="header">
+    <nav class="navegacion">
+      <a class="logo" href="#">
+        <span>CAC-TRIP</span>
+      </a>
+      <ul class="listaNav">
+        <li class="listaItem"> <a class="linkNav" href="#tendencias">Tendencias</a></li>
+        <li class="listaItem"> <a class="linkNav" href="#registrarse">Registrarse</a></li>
+        <li class="listaItem"> <a class="linkNav inicioSesion" href="#iniciosesion">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main" class="main">
+    <section class="sectionPrincipal">
+      <h1 class="tituloPrincipal">
+        Titulo Principal
+      </h1>
+      <h2 class="subtituloPrincipal">
+        Subtitulo Principal
+      </h2>
+      <a class="botonRegistrarse" href="#registrarse">Registrate</a>
+    </section>
+    <section class="buscadorPrincipal">
+    <h2 class="tituloSection">¿Cual es tu proximo destino?</h2>
+    <form class="buscador">
+      <input class="inputBuscador" type="text" placeholder="Bahamas..." id="buscar" name="buscar">
+      <input type="submit" class="botonBuscador" value="Buscar">
+    </form>
+    </section>
+    <hr>
+    <section id="tendencias" class="tendenciasDeHoy">
+      <h3 class="tituloSection">Las tendencias de hoy</h3>
+      <div class="cartas" id="tendenciasContainer">
+        <!-- SE CARGAN LAS TENDENCIAS -->
+      </div>
+      <button class="botonAnterior">Anterior</button>
+      <button class="botonSiguiente">Siguiente</button>
+    </section>
+    <hr>
+    <section class="recomendaciones">
+      <h3 class="tituloSection"> Los mejores valorados</h3>
+      <div class="recomend" id="recomendContainer"></div>
+      <!-- ACA VAN LOS QUE MAS TE GUSTEN...SUPONGO-->
+    </section>
+  </main>
+  <footer class="footer">
+    <nav aria-label="navFooter" class="navegacion">
+      <ul class="listaNav">
+        <li class="listaItem"><a class="linkNav" href="#">Términos y condiciones</a></li>
+        <li class="listaItem"><a class="linkNav" href="#">Preguntas frecuentes</a></li>
+        <li class="listaItem"><a class="linkNav" href="#">Ayuda</a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 </html>
