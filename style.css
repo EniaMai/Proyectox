@@ -92,10 +92,7 @@ body{
       
   /* DISPLAY CELULAR Y TABLET */
  @media (max-width: 768px) {
-  .body{
-    
-    font-size: 20px !important;
-  }
+ 
     .header{
       height: initial;
       
@@ -128,10 +125,7 @@ body{
 
     }
 
-    .tituloPrincipal{
-      /* font-size: 25px !important; */
-      font-weight: 100;
-    }
+    
 }
       
   /*MAIN ESCRITORIO*/
@@ -187,8 +181,5 @@ body{
       transition: ease-in-out 0.4s;
       box-shadow: 0 0 10px rgba(227, 137, 18, 0.3);
     }
-  .buscadorPrincipal{
-    background-color: ;
-
-  }
+  
   
