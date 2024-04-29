@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-<link rel="shorcut icon" href="img/logo.png" type="image/x-icon">
+<link rel="shorcut icon" href="static/img/Airplane_silhouette_orange.svg.png" type="image/x-icon">
 
   <title>CAC-TRIP</title>
 </head>
@@ -16,7 +16,7 @@
   <header class="header">
     <nav aria-label="navHeader" class="navegacion">
       
-      <a class="logo" href="#"><img src="img/logo.png" class="avionLogo"alt="avionLogo" title="CAC-TRIPS">
+      <a class="logo" href="#"><img src="/static/img/Airplane_silhouette_orange.svg.png" class="avionLogo"alt="avionLogo" title="CAC-TRIPS">
         <span>CAC-TRIPS</span>
       </a>
       <ul class="listaNav">
@@ -26,7 +26,7 @@
       </ul>
     </nav>
   </header>
-  <main id="main" class="main">
+  <main class="main">
     <section class="sectionPrincipal">
       <h1 class="tituloPrincipal">
         Explora el mundo con nosotros
@@ -34,29 +34,65 @@
       <h2 class="subtituloPrincipal">
         Únete hoy y comienza tu viaje
       </h2>
-      <a class="botonRegistrarse" href="#registrarse">Regístrate</a>
+      <a class="botonRegistrarse" href="/register.html">Regístrate</a>
     </section>
     <section class="buscadorPrincipal">
     <h2 class="tituloSection">¿Cual es tu proximo destino?</h2>
     <form class="buscador">
-      <input class="inputBuscador" type="text" placeholder="Bahamas..." id="buscar" name="buscar">
+      <input class="inputBuscador" type="text" placeholder="Londres, Tokio, Paris..." name="buscar">
       <input type="submit" class="botonBuscador" value="Buscar">
     </form>
     </section>
     <hr>
-    <section id="tendencias" class="tendenciasDeHoy">
-      <h3 class="tituloSection">Las tendencias de hoy</h3>
-      <div class="cartas" id="tendenciasContainer">
-        <!-- SE CARGAN LAS TENDENCIAS -->
+    <section class="serviciosContainer">
+      <h3 class="tituloSection"> Tenemos los mejores servicios para vos! </h3>
+      <div class="serviciosCards">
+        <!-- SE CARGAN LOS SERVICIOS -->
+
+        <!--VUELOS-->
+        <div class="container-box">
+          <div class="container-image">
+            <img src="img/AVION.png" alt="ServicioVuelo">
+          </div>
+          <h4>Servicio de Vuelos</h4>
+          <p>Arrivos y Departuras</p>
+        </div>
+      
+        <!--COMIDA-->
+      <div class="container-box">
+        <div class="container-image">
+          <img src="./img/CATERING.png" alt="ServicioComida">
+        </div>
+        <h4>Servicio de Comidas</h4>
+        <p>Catering all inclusive</p>
       </div>
-      <button class="botonAnterior">Anterior</button>
-      <button class="botonSiguiente">Siguiente</button>
-    </section>
+    
+    <!-- TRANSPORTE -->
+    <div class="container-box">
+      <div class="container-image">
+        <img src="./img/BUS.png" alt="ServicioTransporte">
+      </div>
+      <h4>Servicio de Transporte</h4>
+      <p>Traslados de ida y vuelta</p>
+    </div>
+  
+    <!-- HOTELES -->
+    <div class="container-box">
+      <div class="container-image">
+        <img src="./img/HOTEL2.png" alt="ServicioHotel">
+      </div>
+      <h4> Servicio de Hoteles</h4>
+       <p>Check-in y out</p>
+      </div>
+</div>
+</section>
     <hr>
-    <section class="recomendaciones">
+    <section class="recomendContainer">
       <h3 class="tituloSection"> Los mejores valorados</h3>
-      <div class="recomend" id="recomendContainer"></div>
+      <div class="recomendCards"></div>
       <!-- ACA VAN LOS QUE MAS TE GUSTEN...SUPONGO-->
+      <button class="botonesDireccion">Anterior</button>
+      <button class="botonesDireccion">Siguiente</button>
     </section>
   </main>
   <footer class="footer">

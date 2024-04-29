@@ -13,7 +13,8 @@
 }
 
 body{
-  background-color:#2C7865;
+  background-color: #2c7865d6;
+  
   color: white;
 }
 /* DYSPLAY DE ESCRITORIO */
@@ -37,14 +38,21 @@ body{
 
 .logo {
   text-decoration: none;
-  color: #d9edbf;
-  font-weight: 700;
-  font-size: 1.2rem;
+  color: #D9EDBF;
+  font-weight: 500;
+  font-size: 1.5rem;
+  
+  
+}
+.logo:hover{
+  text-shadow: 2px 2px 2px #d9edbf4d;
+  -webkit-text-stroke: 0.01px rgb(255, 140, 0);
 }
 
 .avionLogo {
-  width: 33px;
- 
+  width: 28px;
+  transition: transform 1s ease-in-out; 
+
 }
 
 .listaNav{
@@ -90,7 +98,7 @@ body{
   transition: ease 0.5s;
 }
       
-  /* DISPLAY CELULAR Y TABLET */
+  /* MAIN DISPLAY CELULAR Y TABLET */
  @media (max-width: 768px) {
  
     .header{
@@ -130,8 +138,8 @@ body{
       
   /*MAIN ESCRITORIO*/
     .sectionPrincipal{
-      color: whitesmoke;
-      background:linear-gradient(to right top, #0000008a, #0000008a), url(img/background2.jpg);
+      color: #D9EDBF;
+      background:linear-gradient(to bottom, #00000095, #00000046), url(img/background2.jpg);
       background-size: cover;
       background-position: center;
       height: 90vh;
@@ -144,20 +152,22 @@ body{
     .tituloPrincipal{
       font-size: 4rem;
       font-weight: 700;
+      text-shadow: 2px 2px 2px black;
       margin-bottom: 1rem;
-      text-shadow: 4px black;
       transition: ease 0.8s;
       
     }
     .tituloPrincipal:hover{
       color: transparent;
-      -webkit-text-stroke: 0.1px whitesmoke;
-      transition: ease-out 0.8s;
+      text-shadow: 2px 2px 2px rgba(255, 123, 0, 0.458);
+      -webkit-text-stroke: 0.1px #FF9800;
+      transition: ease-in-out 0.8s;
       
     }
     .subtituloPrincipal{
       font-size: 1.7rem;
       font-weight: 100;
+      text-shadow: 2px 2px 2px black;
       margin-bottom: 1rem;
       transition: ease 0.8s;
     }
@@ -181,5 +191,144 @@ body{
       transition: ease-in-out 0.4s;
       box-shadow: 0 0 10px rgba(227, 137, 18, 0.3);
     }
-  
-  
+    /* BUSCADOR */
+  .buscadorPrincipal{
+    background: linear-gradient(to  bottom , #00000046,#0000007f) ,url(/static/img/Paper\ Airplanes\ in\ Orange\ -\ Small.jpg);
+    background-color: #0000008b;
+    color: #D9EDBF;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tituloSection{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 2px black;
+  }
+  .buscador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .inputBuscador{
+    color: #02533e;
+    border: 5px solid #2C7865;
+    border-radius: 25px;
+    background-color: #D9EDBF;
+    outline: none;
+    font-size: 1.5rem;
+    height: 50px;
+    width: 500px;
+    margin: 20px 0px;
+    text-align:center;
+    padding: 10px;
+  }
+  .inputBuscador:focus::placeholder{
+    color: transparent;
+  }
+  .botonBuscador{
+    background-color: #D9EDBF;
+    color: #02533e;
+    outline: none;
+    display: inline-block;
+    height: 50px;
+    margin: 20px 10px;
+    padding:10px 10px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: 5px solid #2C7865;
+    text-align: center;
+  }
+  .botonBuscador:hover{
+    transition: ease-in-out 0.4s;
+    box-shadow: 0 0 10px #D9EDBF;
+  }
+  hr{
+    border-color: #2C7865;
+  }
+
+  /* SERVICIOS */
+.serviciosContainer{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.serviciosContainer .tituloSection{
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 1rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #D9EDBF;
+}
+.serviciosCards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+  gap: 25px;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom:10px;
+}
+.container-box{
+  border: 1px solid #D9EDBF;
+  border-radius: 5px;
+  padding: 50px 10px;
+  transition: all 0.7s ease 0s;
+}
+.container-image img{
+  height: 110px;
+  width: 110px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.container-box h4{
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 550;
+}
+.container-box p{
+  font-size: 15px;
+  color: #D9EDBF;
+}
+.container-box:hover{
+  background: linear-gradient(to  bottom , #00000046,#0000007f) ,url(/static/img/Paper\ Airplanes\ in\ Orange\ -\ Small.jpg);
+  color: #D9EDBF;
+  transition: ease 0.6s;
+  text-shadow: 2px 2px 2px black;
+  transform:translate(3px);
+  box-shadow: 5px 20px 50px rgba(27, 27, 27, 0.467);
+  border: none;
+  border-radius: 3px;
+}
+
+/* TENDENCIAS */
+.botonesDireccion{
+  border: 1px solid white;
+  box-sizing: content-box;
+  margin-top:50px;
+  margin-left:20px;
+  background-color:#D9EDBF;
+  color: #02533e;
+  padding: 0.4rem 0.4rem;
+  border: 4px solid #02533e;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom:60px;
+}
+.botonesDireccion:hover{
+  transition: ease-in-out 0.4s;
+    box-shadow: 0 0 10px #D9EDBF;
+}
