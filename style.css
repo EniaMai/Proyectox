@@ -358,7 +358,7 @@ body{
   margin-bottom: 2px;
   list-style-type: disc;
 }
-/* FOOTER */
+/* FOOTER ESCRITORIO*/
 .footer{
   background-color: #73a5169a;
   color: #D9EDBF;
@@ -372,7 +372,6 @@ body{
   align-items: center;
   margin-bottom: 20px;
 }
-
 
 /* DISPLAY CELULAR Y TABLET */
 @media (max-width: 768px) {
